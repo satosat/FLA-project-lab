@@ -5,27 +5,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6365a0f0-255e-4a4d-b7de-03404c1fc4ae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-lec.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/Database.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/DatabaseProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/IDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/car/Engine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/car/Wheel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/car/seat/Seat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observable/Observable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <list id="6e0902bf-f3b7-4130-8c88-69d3701154ca" name="Changes by aradh" comment="">
+      <change afterPath="$PROJECT_DIR$/src/builder/CarBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/car/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/prototype/Clone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/prototype/EngineRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
+    <list id="f73d0747-9791-4728-b6b1-069900d19be2" name="Changes by vasthyrezkitanisya" comment="">
+      <change afterPath="$PROJECT_DIR$/src/model/car/seat/SeatFabric.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/car/seat/SeatLeather.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="bc0d6a93-11b8-41e5-9b0f-e68c33fbbc56" />
+        <option name="url" value="https://github.com/satosat/FLA-project-lab.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2ItTLzc7Sm4wXFtCTonq7an9RtX" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -34,14 +66,21 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="model.car" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -50,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670999829521</updated>
-      <workItem from="1670999830819" duration="1071000" />
+      <workItem from="1670999830819" duration="4867000" />
     </task>
     <servers />
   </component>
