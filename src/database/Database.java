@@ -16,6 +16,21 @@ public class Database implements IDatabase {
         cars = new ArrayList<>();
         users = new ArrayList<>();
         engines = new ArrayList<>();
+        initiateDummyData();
+    }
+
+    private void initiateDummyData() {
+        // Engines
+        engines.add(new Engine(90, 1.3, 4, "V"));
+        engines.add(new Engine(110, 1.5, 4, "V"));
+        engines.add(new Engine(110, 1.5, 4, "V"));
+        engines.add(new Engine(140, 1.6, 4, "V"));
+        engines.add(new Engine(200, 2.0, 6, "V"));
+
+        // Cars
+        cars.add(new Car("Alpha (Sedan)"));
+        cars.add(new Car("Beta (SUV)"));
+        cars.add(new Car("Omega (Hatchback)"));
     }
 
     public static Database getInstance(){
@@ -33,6 +48,14 @@ public class Database implements IDatabase {
     @Override
     public ArrayList<Car> getCars() {
         return cars;
+    }
+
+    public static ArrayList<Engine> getEngines() {
+        return engines;
+    }
+
+    public static void setEngines(ArrayList<Engine> engines) {
+        Database.engines = engines;
     }
 
     @Override
