@@ -123,8 +123,7 @@ public class Main {
 
         // Add Car bought to the user's Car List
         Car car = carBuilder.build();
-        Database database = Database.getInstance();
-
+        user.addBoughtCars(car);
     }
 
     public static void main(String[] args) {

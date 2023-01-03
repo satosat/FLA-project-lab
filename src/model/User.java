@@ -1,10 +1,16 @@
 package model;
 
+import model.car.Car;
+
+import java.util.ArrayList;
+
 public class User {
     private String name;
     private String email;
     private String phoneNumber;
     private Boolean isAdmin;
+
+    private ArrayList<Car> boughtCars;
 
     public User(String name, String email, String phoneNumber, Boolean isAdmin) {
         this.name = name;
@@ -27,5 +33,13 @@ public class User {
 
     public Boolean getAdmin() {
         return isAdmin;
+    }
+
+    public ArrayList<Car> getBoughtCars() {
+        return boughtCars;
+    }
+
+    public void addBoughtCars(Car newCar) {
+        boughtCars.add(newCar);
     }
 }
