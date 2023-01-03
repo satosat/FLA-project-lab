@@ -1,6 +1,10 @@
 import database.Database;
+import factory.FabricSeatCreator;
+import factory.LeatherSeatCreator;
+import factory.SeatCreator;
 import model.car.Engine;
 import model.car.Wheel;
+import model.car.seat.Seat;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -34,6 +38,7 @@ public class Prompt {
         ArrayList<Engine> engines = database.getEngines();
         System.out.println("********************");
         System.out.println("Available Engines ⚙");
+        System.out.println("********************");
         for (Engine engineOption : engines) {
             System.out.println(index++ + ". " + engineOption.getSpecification());
         }
@@ -60,5 +65,31 @@ public class Prompt {
         }while(wheelSize < 16 || wheelSize > 20);
         wheel = new Wheel(wheelSize);
         return wheel;
+    }
+
+    public static Seat carSeat(){
+        System.out.println("********************");
+        System.out.println("Available Car Seats💺");
+        System.out.println("********************");
+        System.out.println("1. Fabric Seat");
+        System.out.println("2. Leather Seat");
+
+        int seatChoice = 0;
+        SeatCreator seatCreator = null;
+        do{
+            System.out.print("Choose Wheel Size (inch) [1 - 2] >> ");
+            seatChoice = scan.nextInt();
+            scan.nextLine();
+        }while(seatChoice < 1 || seatChoice > 2);
+
+        switch(seatChoice){
+            case 1:
+                seatCreator = new FabricSeatCreator();
+                break;
+            case 2:
+                seatCreator = new LeatherSeatCreator();
+                break;
+        }
+        return seatCreator.useSeat();
     }
 }

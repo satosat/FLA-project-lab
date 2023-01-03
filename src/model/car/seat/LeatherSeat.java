@@ -1,6 +1,6 @@
 package model.car.seat;
 
-public class SeatLeather implements Seat{
+public class LeatherSeat implements Seat{
 
     @Override
     public String material(){

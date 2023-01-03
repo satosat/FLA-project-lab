@@ -88,7 +88,6 @@ public class Main {
         CarBuilder carBuilder = new CarBuilder();
 
         // Builder Design Pattern is used here
-
         // 1. Choose Car Frame
         int carChoiceIndex = Prompt.carChoiceIndex(cars.size());
         carBuilder.setName(cars.get(carChoiceIndex).getName());
@@ -105,13 +104,19 @@ public class Main {
         Wheel wheel = Prompt.carWheel();
         carBuilder.setWheel(wheel);
 
-
         // 5. Choose Seat
-//        Seat seat = Prompt.carSeat();
-//        carBuilder.setSeat(seat);
+        Seat seat = Prompt.carSeat();
+        carBuilder.setSeat(seat);
 
         Car car = carBuilder.build();
         Database database = Database.getInstance();
+        
+        // 6. [OPTIONAL] Air Freshener
+
+        // 7. [OPTIONAL] Sun Roof
+
+        // 8. [OPTIONAL] Android Auto & Apple Car Play
+
 
         // Add User, Create new user if not registered
 
