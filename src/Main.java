@@ -1,5 +1,6 @@
 import builder.CarBuilder;
 import database.Database;
+import model.User;
 import model.car.Car;
 import model.car.Engine;
 import model.car.Wheel;
@@ -108,19 +109,22 @@ public class Main {
         Seat seat = Prompt.carSeat();
         carBuilder.setSeat(seat);
 
-        Car car = carBuilder.build();
-        Database database = Database.getInstance();
-        
         // 6. [OPTIONAL] Air Freshener
+        carBuilder.setAirFreshener(Prompt.carAirFreshener());
 
         // 7. [OPTIONAL] Sun Roof
+        carBuilder.setSunRoof(Prompt.carSunRoof());
 
         // 8. [OPTIONAL] Android Auto & Apple Car Play
+        carBuilder.setInfotainmentUpgrade(Prompt.carInfotainmentUpgrade());
 
-
-        // Add User, Create new user if not registered
+        // Prompt User identification, Create new user if not registered
+        User user = Prompt.getClient();
 
         // Add Car bought to the user's Car List
+        Car car = carBuilder.build();
+        Database database = Database.getInstance();
+
     }
 
     public static void main(String[] args) {

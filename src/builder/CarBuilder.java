@@ -46,4 +46,16 @@ public class CarBuilder {
     public void setPrice(int price) {
         car.setPrice(price);
     }
+
+    public void setSunRoof(boolean sunRoof) {
+        car.setSunRoof(sunRoof);
+    }
+
+    public void setAirFreshener(boolean airFreshener) {
+        car.setAirFreshener(airFreshener);
+    }
+    public void setInfotainmentUpgrade(boolean infotainmentUpgrade) {
+        car.setInfotainmentUpgrade(infotainmentUpgrade);
+    }
+
 }

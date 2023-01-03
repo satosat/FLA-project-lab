@@ -11,6 +11,35 @@ public class Car {
     private Seat seat;
     private int price;
 
+    private boolean sunRoof;
+    private boolean airFreshener;
+
+    public boolean hasSunRoof() {
+        return sunRoof;
+    }
+
+    public void setSunRoof(boolean sunRoof) {
+        this.sunRoof = sunRoof;
+    }
+
+    public boolean hasAirFreshener() {
+        return airFreshener;
+    }
+
+    public void setAirFreshener(boolean airFreshener) {
+        this.airFreshener = airFreshener;
+    }
+
+    public boolean hasInfotainmentUpgrade() {
+        return infotainmentUpgrade;
+    }
+
+    public void setInfotainmentUpgrade(boolean infotainmentUpgrade) {
+        this.infotainmentUpgrade = infotainmentUpgrade;
+    }
+
+    private boolean infotainmentUpgrade;
+
     public Car(){}
 
     public Car(String name){

@@ -58,6 +58,15 @@ public class Database implements IDatabase {
         Database.engines = engines;
     }
 
+    public User getUserByEmail(String email){
+        ArrayList<User> users = getUsers();
+        for (User user : users) {
+            if(user.getEmail().equalsIgnoreCase(email)){
+                return user;
+            }
+        }
+        return null;
+    }
     @Override
     public void addUser(User user) {
         users.add(user);

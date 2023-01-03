@@ -2,6 +2,7 @@ import database.Database;
 import factory.FabricSeatCreator;
 import factory.LeatherSeatCreator;
 import factory.SeatCreator;
+import model.User;
 import model.car.Engine;
 import model.car.Wheel;
 import model.car.seat.Seat;
@@ -91,5 +92,75 @@ public class Prompt {
                 break;
         }
         return seatCreator.useSeat();
+    }
+
+    public static boolean carAirFreshener(){
+        String choice = "N";
+        do{
+            System.out.print("Would you like to add air freshener to your car? [Y/N] >> ");
+            choice = scan.nextLine();
+        }while(!(choice.equalsIgnoreCase("N")||choice.equalsIgnoreCase("Y")));
+
+        if(choice.equalsIgnoreCase("Y")){
+            return true;
+        }
+        return false;
+    }
+
+    public static boolean carSunRoof(){
+        String choice = "N";
+        do{
+            System.out.print("Would you like to add sun roof to your car? [Y/N] >> ");
+            choice = scan.nextLine();
+        }while(!(choice.equalsIgnoreCase("N")||choice.equalsIgnoreCase("Y")));
+
+        if(choice.equalsIgnoreCase("Y")){
+            return true;
+        }
+        return false;
+    }
+
+    public static boolean carInfotainmentUpgrade(){
+        String choice = "N";
+        do{
+            System.out.print("Would you like to add Android Auto & Apple Car Play to your car? [Y/N] >> ");
+            choice = scan.nextLine();
+        }while(!(choice.equalsIgnoreCase("N")||choice.equalsIgnoreCase("Y")));
+
+        if(choice.equalsIgnoreCase("Y")){
+            return true;
+        }
+        return false;
+    }
+
+    public static User getClient(){
+        Database database = Database.getInstance();
+
+        String email;
+        String name;
+        String phoneNumber;
+
+        System.out.print("Please enter your email >> ");
+        email = scan.nextLine();
+
+        User user = database.getUserByEmail(email);
+        // If user already exist in database, use the existing user
+        if(user != null){
+            System.out.println("Welcome back! " + user.getName());
+            return user;
+        }
+
+        System.out.print("Please enter your name >> ");
+        name = scan.nextLine();
+
+        System.out.print("Please enter your phone number >> ");
+        phoneNumber = scan.nextLine();
+
+        user = new User(name, email, phoneNumber, false);
+
+        database.addUser(user);
+        System.out.println("Registration successful! Welcome " + name);
+
+        return user;
     }
 }

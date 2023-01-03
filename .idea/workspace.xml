@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6365a0f0-255e-4a4d-b7de-03404c1fc4ae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/factory/FabricSeatCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factory/LeatherSeatCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factory/SeatCreator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Prompt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Prompt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/car/seat/SeatFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/car/seat/FabricSeat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/car/seat/SeatLeather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/car/seat/LeatherSeat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/builder/CarBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/builder/CarBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/car/Car.java" afterDir="false" />
     </list>
     <list id="6e0902bf-f3b7-4130-8c88-69d3701154ca" name="Changes by aradh" comment="" />
     <list id="f73d0747-9791-4728-b6b1-069900d19be2" name="Changes by vasthyrezkitanisya" comment="" />
