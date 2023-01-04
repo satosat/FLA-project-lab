@@ -9,7 +9,6 @@ public class Car {
     private Engine engine;
     private Wheel wheel;
     private Seat seat;
-    private int price;
 
     private boolean sunRoof;
     private boolean airFreshener;
@@ -94,11 +93,9 @@ public class Car {
         this.seat = seat;
     }
 
-    public int getPrice() {
-        return price;
-    }
-
-    public void setPrice(int price) {
-        this.price = price;
+    @Override
+    public String toString()
+    {
+        return String.format("%s %s", getName(), engine.getSpecification());
     }
 }

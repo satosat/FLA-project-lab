@@ -6,9 +6,4 @@ public class FabricSeat implements Seat{
     public String material(){
         return "Fabric";
     }
-
-    @Override
-    public String colour(){
-        return "Fabric";
-    }
 }

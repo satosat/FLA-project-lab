@@ -4,22 +4,27 @@ import model.User;
 import model.car.Car;
 import model.car.Engine;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
-public class Database implements IDatabase {
+public class Database {
     private static Database instance;
     private static ArrayList<Car> cars;
     private static ArrayList<User> users;
     private static ArrayList<Engine> engines;
+    private static Map<User, ArrayList<Car>> sales;
 
     private Database() {
         cars = new ArrayList<>();
         users = new ArrayList<>();
         engines = new ArrayList<>();
-        initiateDummyData();
+        sales = new HashMap<>();
+        seed();
     }
 
-    private void initiateDummyData() {
+    private void seed() {
         // Engines
         engines.add(new Engine(90, 1.3, 4, "V"));
         engines.add(new Engine(110, 1.5, 4, "V"));
@@ -31,6 +36,10 @@ public class Database implements IDatabase {
         cars.add(new Car("Alpha (Sedan)"));
         cars.add(new Car("Beta (SUV)"));
         cars.add(new Car("Omega (Hatchback)"));
+
+        // User & Admin
+        users.add(new User("User", "user@mail.com", "085100200300", false));
+        users.add(new User("Admin", "admin@mail.com", "085100200400", true));
     }
 
     public static Database getInstance(){
@@ -40,12 +49,10 @@ public class Database implements IDatabase {
         return instance;
     }
 
-    @Override
     public ArrayList<User> getUsers() {
         return users;
     }
 
-    @Override
     public ArrayList<Car> getCars() {
         return cars;
     }
@@ -67,13 +74,43 @@ public class Database implements IDatabase {
         }
         return null;
     }
-    @Override
+    public void deleteCarByIndex(int index){
+        cars.remove(index);
+    }
     public void addUser(User user) {
         users.add(user);
     }
 
-    @Override
     public void addCar(Car car) {
         cars.add(car);
+    }
+
+    public void displayAllEngines()
+    {
+        int index = 1;
+        System.out.println("********************");
+        System.out.println("Available Engines ⚙");
+        System.out.println("********************");
+        for (Engine engineOption : engines) {
+            System.out.println(index++ + ". " + engineOption.getSpecification());
+        }
+    }
+
+    public ArrayList<Car> getTransactions(User user)
+    {
+        return sales.get(user);
+    }
+
+    public void addTransaction(User user, Car newCar)
+    {
+        if(sales.get(user) != null) {
+            sales.get(user).add(newCar);
+        } else {
+            sales.put(user, new ArrayList<Car>() {
+                {
+                    add(newCar);
+                }
+            });
+        }
     }
 }

@@ -43,9 +43,6 @@ public class CarBuilder {
         car.setSeat(seat);
     }
 
-    public void setPrice(int price) {
-        car.setPrice(price);
-    }
 
     public void setSunRoof(boolean sunRoof) {
         car.setSunRoof(sunRoof);

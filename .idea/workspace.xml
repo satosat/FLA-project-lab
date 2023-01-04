@@ -5,12 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6365a0f0-255e-4a4d-b7de-03404c1fc4ae" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Authentication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observable/Promo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/Observer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/DatabaseProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/IDatabase.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/car/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/observable/Observable.java" beforeDir="false" />
     </list>
-    <list id="6e0902bf-f3b7-4130-8c88-69d3701154ca" name="Changes by aradh" comment="" />
-    <list id="f73d0747-9791-4728-b6b1-069900d19be2" name="Changes by vasthyrezkitanisya" comment="" />
+    <list id="6e0902bf-f3b7-4130-8c88-69d3701154ca" name="Changes by aradh" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Prompt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Prompt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/builder/CarBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/builder/CarBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/car/Car.java" afterDir="false" />
+    </list>
+    <list id="f73d0747-9791-4728-b6b1-069900d19be2" name="Changes by vasthyrezkitanisya" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/car/seat/FabricSeat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/car/seat/FabricSeat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/car/seat/LeatherSeat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/car/seat/LeatherSeat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/car/seat/Seat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/car/seat/Seat.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +55,69 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/Main.java">
+      <ranges>
+        <range start1="7" end1="7" start2="7" end2="8" changelist="6365a0f0-255e-4a4d-b7de-03404c1fc4ae" />
+        <range start1="13" end1="13" start2="14" end2="15" changelist="6e0902bf-f3b7-4130-8c88-69d3701154ca" />
+        <range start1="14" end1="16" start2="16" end2="18" changelist="6365a0f0-255e-4a4d-b7de-03404c1fc4ae" />
+        <range start1="18" end1="38" start2="20" end2="28" changelist="6e0902bf-f3b7-4130-8c88-69d3701154ca" />
+        <range start1="39" end1="40" start2="29" end2="32" changelist="6e0902bf-f3b7-4130-8c88-69d3701154ca" />
+        <range start1="43" end1="46" start2="35" end2="44" changelist="f73d0747-9791-4728-b6b1-069900d19be2" />
+        <range start1="47" end1="47" start2="45" end2="66" changelist="f73d0747-9791-4728-b6b1-069900d19be2" />
+        <range start1="48" end1="48" start2="67" end2="75" changelist="6365a0f0-255e-4a4d-b7de-03404c1fc4ae" />
+        <range start1="49" end1="49" start2="76" end2="102" changelist="6e0902bf-f3b7-4130-8c88-69d3701154ca" />
+        <range start1="50" end1="56" start2="103" end2="104" changelist="6e0902bf-f3b7-4130-8c88-69d3701154ca" />
+        <range start1="58" end1="58" start2="106" end2="113" changelist="6e0902bf-f3b7-4130-8c88-69d3701154ca" />
+        <range start1="59" end1="59" start2="114" end2="115" changelist="6365a0f0-255e-4a4d-b7de-03404c1fc4ae" />
+        <range start1="61" end1="61" start2="117" end2="118" changelist="6365a0f0-255e-4a4d-b7de-03404c1fc4ae" />
+        <range start1="67" end1="67" start2="124" end2="130" changelist="6e0902bf-f3b7-4130-8c88-69d3701154ca" />
+        <range start1="68" end1="69" start2="131" end2="132" changelist="6e0902bf-f3b7-4130-8c88-69d3701154ca" />
+        <range start1="71" end1="72" start2="134" end2="135" changelist="6365a0f0-255e-4a4d-b7de-03404c1fc4ae" />
+        <range start1="74" end1="74" start2="137" end2="138" changelist="6365a0f0-255e-4a4d-b7de-03404c1fc4ae" />
+        <range start1="77" end1="77" start2="141" end2="142" changelist="6365a0f0-255e-4a4d-b7de-03404c1fc4ae" />
+        <range start1="81" end1="84" start2="146" end2="147" changelist="6365a0f0-255e-4a4d-b7de-03404c1fc4ae" />
+        <range start1="85" end1="85" start2="148" end2="161" changelist="6e0902bf-f3b7-4130-8c88-69d3701154ca" />
+        <range start1="87" end1="88" start2="163" end2="165" changelist="6365a0f0-255e-4a4d-b7de-03404c1fc4ae" />
+        <range start1="120" end1="123" start2="197" end2="197" changelist="6e0902bf-f3b7-4130-8c88-69d3701154ca" />
+        <range start1="125" end1="126" start2="199" end2="200" changelist="6e0902bf-f3b7-4130-8c88-69d3701154ca" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/model/User.java">
+      <ranges>
+        <range start1="2" end1="2" start2="2" end2="3" changelist="6365a0f0-255e-4a4d-b7de-03404c1fc4ae" />
+        <range start1="3" end1="3" start2="4" end2="5" changelist="6365a0f0-255e-4a4d-b7de-03404c1fc4ae" />
+        <range start1="6" end1="7" start2="8" end2="9" changelist="6365a0f0-255e-4a4d-b7de-03404c1fc4ae" />
+        <range start1="12" end1="13" start2="14" end2="15" changelist="6365a0f0-255e-4a4d-b7de-03404c1fc4ae" />
+        <range start1="19" end1="19" start2="21" end2="22" changelist="6365a0f0-255e-4a4d-b7de-03404c1fc4ae" />
+        <range start1="38" end1="39" start2="41" end2="42" changelist="6365a0f0-255e-4a4d-b7de-03404c1fc4ae" />
+        <range start1="42" end1="43" start2="45" end2="47" changelist="6e0902bf-f3b7-4130-8c88-69d3701154ca" />
+        <range start1="44" end1="44" start2="48" end2="83" changelist="6365a0f0-255e-4a4d-b7de-03404c1fc4ae" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/model/car/Car.java">
+      <ranges>
+        <range start1="11" end1="12" start2="11" end2="11" changelist="6e0902bf-f3b7-4130-8c88-69d3701154ca" />
+        <range start1="96" end1="102" start2="95" end2="99" changelist="6365a0f0-255e-4a4d-b7de-03404c1fc4ae" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/database/Database.java">
+      <ranges>
+        <range start1="6" end1="6" start2="6" end2="7" changelist="6365a0f0-255e-4a4d-b7de-03404c1fc4ae" />
+        <range start1="7" end1="7" start2="8" end2="10" changelist="6365a0f0-255e-4a4d-b7de-03404c1fc4ae" />
+        <range start1="8" end1="9" start2="11" end2="12" changelist="6365a0f0-255e-4a4d-b7de-03404c1fc4ae" />
+        <range start1="13" end1="13" start2="16" end2="17" changelist="6365a0f0-255e-4a4d-b7de-03404c1fc4ae" />
+        <range start1="18" end1="19" start2="22" end2="24" changelist="6365a0f0-255e-4a4d-b7de-03404c1fc4ae" />
+        <range start1="21" end1="22" start2="26" end2="27" changelist="6365a0f0-255e-4a4d-b7de-03404c1fc4ae" />
+        <range start1="33" end1="33" start2="38" end2="42" changelist="6365a0f0-255e-4a4d-b7de-03404c1fc4ae" />
+        <range start1="42" end1="43" start2="51" end2="51" changelist="6365a0f0-255e-4a4d-b7de-03404c1fc4ae" />
+        <range start1="47" end1="48" start2="55" end2="55" changelist="6365a0f0-255e-4a4d-b7de-03404c1fc4ae" />
+        <range start1="69" end1="70" start2="76" end2="79" changelist="6e0902bf-f3b7-4130-8c88-69d3701154ca" />
+        <range start1="74" end1="75" start2="83" end2="83" changelist="6365a0f0-255e-4a4d-b7de-03404c1fc4ae" />
+        <range start1="78" end1="78" start2="86" end2="115" changelist="6e0902bf-f3b7-4130-8c88-69d3701154ca" />
+      </ranges>
+    </file>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -52,7 +135,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/FLA-project-lab",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "last_opened_file_path": "/Users/satrio/Documents/GitHub/FLA-project-lab",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -75,6 +159,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670999829521</updated>
       <workItem from="1670999830819" duration="4867000" />
+      <workItem from="1672814359249" duration="7506000" />
     </task>
     <servers />
   </component>

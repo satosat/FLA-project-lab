@@ -33,16 +33,10 @@ public class Prompt {
 
     public static Engine carEngine(){
         Engine engine = null;
-        int index = 1;
 
         Database database = Database.getInstance();
         ArrayList<Engine> engines = database.getEngines();
-        System.out.println("********************");
-        System.out.println("Available Engines ⚙");
-        System.out.println("********************");
-        for (Engine engineOption : engines) {
-            System.out.println(index++ + ". " + engineOption.getSpecification());
-        }
+        database.displayAllEngines();
 
         int choice = 0;
         do{
@@ -78,7 +72,7 @@ public class Prompt {
         int seatChoice = 0;
         SeatCreator seatCreator = null;
         do{
-            System.out.print("Choose Wheel Size (inch) [1 - 2] >> ");
+            System.out.print("Choose Seat Option [1 - 2] >> ");
             seatChoice = scan.nextInt();
             scan.nextLine();
         }while(seatChoice < 1 || seatChoice > 2);
@@ -131,36 +125,5 @@ public class Prompt {
             return true;
         }
         return false;
-    }
-
-    public static User getClient(){
-        Database database = Database.getInstance();
-
-        String email;
-        String name;
-        String phoneNumber;
-
-        System.out.print("Please enter your email >> ");
-        email = scan.nextLine();
-
-        User user = database.getUserByEmail(email);
-        // If user already exist in database, use the existing user
-        if(user != null){
-            System.out.println("Welcome back! " + user.getName());
-            return user;
-        }
-
-        System.out.print("Please enter your name >> ");
-        name = scan.nextLine();
-
-        System.out.print("Please enter your phone number >> ");
-        phoneNumber = scan.nextLine();
-
-        user = new User(name, email, phoneNumber, false);
-
-        database.addUser(user);
-        System.out.println("Registration successful! Welcome " + name);
-
-        return user;
     }
 }
